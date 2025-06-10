@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería en Columna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("file:///D:/HONGOS/conoce%20al%20equipo/fondo%20que%20yo%20quiero.jpg");
+      background-size: 500px 300px; /* Ancho x Alto del fondo */
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo-imagen {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .galeria-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    }
+
+    .galeria-container img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con la imagen de título -->
+  <header>
+    <img src="titulo.jpg" alt="Imagen de Título" class="titulo-imagen">
+  </header>
+
+  <!-- Galería en columna centrada -->
+  <div class="galeria-container">
+    <img src="img/img1.jpg" alt="Imagen 1">
+    <img src="img/img2.jpg" alt="Imagen 2">
+    <img src="img/img3.jpg" alt="Imagen 3">
+    <img src="img/img4.jpg" alt="Imagen 4">
+    <img src="img/img5.jpg" alt="Imagen 5">
+  </div>
+
+</body>
+</html>
